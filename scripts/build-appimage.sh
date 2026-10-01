@@ -51,6 +51,7 @@ DESTDIR="${APPDIR}" cmake --install "${BUILDDIR}/cmake"
 echo "=== Creating AppImage ==="
 export QMAKE=qmake6
 export QML_SOURCES_PATHS="${SRCDIR}/src/qml"
+export APPIMAGE_EXTRACT_AND_RUN=1
 export VERSION
 
 # Ensure Kirigami desktop style and addons modules are bundled into AppDir
